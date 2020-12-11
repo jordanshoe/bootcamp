@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+ <!-- doctype = declaration of html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- internal css -->
+    <style>
+        body{
+            background-color: darkslateblue;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- content display -->
+    <!-- heading elements = use for title of the content -->
+    <h1>this is a heading 1 element</h1>
+    <h2>this is a heading 2 element</h2>
+    <h3 class="ai">this is a heading 3 element</h3>
+    <h4>this is a heading 4 element</h4>
+    <h5>this is a heading 5 element</h5>
+    <h6>this is a heading 6 element</h6>
+
+    <!-- paragraph element -->
+    <p class="joe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ipsam ut, et hic reprehenderit officiis rerum officia delectus vero nemo.</p>
+
+    <!-- list elements 
+        ol = ordered list
+        ul = unordered list
+        li = list item
+    -->
+    <h3>Category</h3>
+    <ol id="ukisu">
+        <li>
+           <b>travel</b> 
+            <ul class="list">
+                <li>
+                   <i>asia</i> 
+                    <ol>
+                        <li>philippines</li>
+                        <li>korea</li>
+                    </ol>
+                </li>
+                <li>europe</li>
+                <li>america</li>
+            </ul>
+        </li>
+        <li>food</li>
+        <li>sport</li>
+        <li>movies</li>
+        
+    </ol>
+
+    <h3 class="ai">My skill</h3>
+    <ul class="skill">
+        <li>programming</li>
+        <li>web design</li>
+        <li>cooking</li>
+        <li>dancing</li>
+    </ul>
+
+    <!-- inline elements -->
+
+    <b>this is a bold element</b>
+    <i>this is an italic element</i>
+
+    <!-- link element
+        a = anchor and used to link page
+        href = hypertext reference or url
+
+        attribute = helper of the element, add addtional information, and it can control the element
+
+        syntax:
+        attribute name = "attribute value"
+
+    -->
+    <a href="https://facebook.com" target="_blank">Click to facebook</a>
+    <a href="https://instagram.com" target="_blank" >click to instagram</a>
+
+    <!-- image element
+        src = source
+        alt = alternative text
+    -->
+    <img src="image/addidas.jpg" width="400px" height="300px" alt="sample addidas tshirt">
+    <img src="image/nike2.jpg" width="300px" height="250px" alt="sample nike tshirt">
+    <img src="image/puma.jpg" width="200px" height="300px" alt="">
+
+    <!-- group elements
+        1. div = to group inline and block elements
+        2. span = to group inline elements only
+    -->
+    <div style="background-color: darkgray;">
+        <h3>this is a div 1 element</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, magni.</p> 
+    </div>
+    <div style="background-color: lightgreen;" class="div2" >
+        <h3>this is a div 2 element</h3> 
+        <ol>
+            <li>terminator</li>
+            <li>naruto</li>
+        </ol>
+        <a href="https://youtube.com">Click to youtube</a>
+    </div>
+    <span style="background-color: red;">
+       <i>this is a span 1 element</i> 
+       <b>Lorem, ipsum dolor.</b>
+    </span>
+    <span style="background-color: lightpink;">
+        this is a span 2 element
+        <a href="https://facebook.com">click to FACEBOOK</a>
+    </span>
+
+    <!-- form element -->
+
+    <form action="https://kredo.jp">
+        <div>
+            <label for="firstname">Firstname:</label>
+            <input type="text" name="firstname" id="firstname" >
+        </div>
+        
+        <div>
+            <label for="lastname">Lastname:</label>
+            <input type="text" name="lastname" id="lastname">
+        </div>
+        
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="">Password:</label>
+            <input type="password" name="password">
+        </div>
+        
+        <div>
+            <label for="">Date of Birth</label>
+            <input type="date" name="birth">
+        </div>
+        <div>
+            <label for="">Credit card No.:</label>
+            <input type="number" name="credit-card">
+        </div>
+        
+        <div>
+            <label for="">Choose your gender:</label>
+            <br>
+            <input type="radio" name="gender" value="male">
+            <label for="">Male</label>
+
+            <input type="radio" name="gender" value="female">
+            <label for="">Female</label>
+
+            <input type="radio" name="gender" value="lgbt">
+            <label for="">LGBT</label>
+        </div>
+        <div>
+            <label for="">Choose your favorite device/s</label>
+            <br>
+            <input type="checkbox" name="device" value="laptop">
+            <label for="">Laptop</label>
+
+            <input type="checkbox" name="device" value="ipad">
+            <label for="">Ipad</label>
+
+            <input type="checkbox" name="device" value="tablet">
+            <label for="">Tablet</label>
+        </div>
+        
+        <div>
+            <label for="comment">Comment:</label>
+            <br>
+           
+            <!-- br = break line  -->
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+             
+             
+        <input type="submit">
+        <button>send</button>
+    </form>
+    <br>
+    <br>
+
+    <!-- table element
+        table = parent element
+        tr = table row
+        th = table header (column)
+        td = table data (column)
+    -->
+                        <!-- inline css -->
+    <table border="1" style="background-color: darkorange;" class="ai joe">
+        <tr>
+            <th>travel</th>
+            <th colspan="2">Sport</th>
+            <!-- <th>Food</th> -->
+        </tr>
+        <tr>
+            <td rowspan="2">asia</td>
+            <td>basketball</td>
+            <td>street food</td>
+        </tr>
+        <tr>
+            <!-- <td>south america</td> -->
+            <td>Football</td>
+            <td>Pasta</td>
+        </tr>
+    </table>
+</body>
+</html>

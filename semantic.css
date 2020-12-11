@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: gray;
+}
+nav{
+    background-color: lightblue;
+}
+main{
+    background-color: lightcoral;
+}
+section{
+    background-color: lightseagreen;
+}
+article{
+    background-color: lime;
+}
+aside{
+    background-color: magenta;
+}
+footer{
+    background-color: mediumpurple;
+}
